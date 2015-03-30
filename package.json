@@ -1,0 +1,17 @@
+{
+    "name": "zoon",
+    "version": "0.1.0",
+    "description": "Prototypical programming, and helpers.",
+    "author": "Quentin Engles",
+    "main":"index.js",
+    "repostitory": {
+        "type": "git",
+        "url": "git://github.com/hollowdoor/zoon.git"
+    },
+    "keywords" : [
+        "prototype",
+        "inheritence"
+    ],
+    "dependencies" : {},
+    "license": "MIT"
+}

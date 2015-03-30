@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/odd.build.js"></script>
+
+</head>
+<body>
+<script>
+var odd = require('odd.js');
+function hello(a){
+    this.sentence = a;
+    this.a = '';
+    this.b = '';
+    this.ob2 = 'bla';
+}
+hello.prototype.exit = function(){
+    console.log("good bye!");
+};
+var M = odd.factory(hello, {
+    constructor: hello,
+    thing: String,
+    speak: function(){
+        console.log(this.sentence);
+    }
+});
+
+
+var m = M("hello world!", {
+    thing: 'bla'
+});
+
+m.speak();
+m.exit();
+console.log(m.thing);
+
+</script>
+
+</body>
+</html>
