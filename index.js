@@ -24,18 +24,23 @@ THE SOFTWARE.
 */
 
 //set up
-//git remote add origin https://github.com/hollowdoor/zoon.git
+//git remote add origin https://github.com/hollowdoor/zoan.git
+//---
 //iteration
 //git push -u origin master
 //npm publish
+//---
+//settup for testing
+//cd ./test
+//browserify ../index.js -o zoan.js
 
 var x = {};
 
-x.factory = require('./lib/zoon.factory.js');
-x.signal = require('./lib/zoon.signal.js');
-x.state = require('./lib/zoon.state.js');
-x.random = require('./lib/zoon.random.js');
-//x.fetch = require('./lib/zoon.fetch.js');
+x.factory = require('./lib/factory');
+x.clone = require('./lib/clone');
+x.signal = require('./lib/signal');
+x.state = require('./lib/state');
+x.prng = require('./lib/random');
 
 if(!!module)
     module.exports = x;

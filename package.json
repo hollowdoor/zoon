@@ -1,6 +1,6 @@
 {
     "name": "zoon",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Prototypical programming, and helpers.",
     "author": "Quentin Engles",
     "main":"index.js",
